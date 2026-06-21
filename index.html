@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis 15 Años · Laura Alejandra</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- DESTELLOS EN LA PAGINA -->
+    <div class="sparkles-container"></div>
+    <!-- PRE-LOADER -->
+    <div id="preloader" onclick="abrirInvitacion()">
+      <div class="petal-shower" id="petals"></div>
+      <div class="sobre-wrapper">
+        <div class="sobre-solapa"></div>
+        <div class="sobre-body">
+          <div class="sobre-crown">👑</div>
+          <div class="sobre-title">Mis 15 Años</div>
+          <div class="sobre-name">Laura Alejandra</div>
+          <div class="sobre-date">4 de Julio de 2026</div>
+          <div class="sobre-seats">✦ Tenemos reservado un lugar para ti ✦</div>
+          <br />
+          <button class="sobre-btn">✉ Click para abrir invitación</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <span class="nav-logo">Laura · XV</span>
+      <button class="menu-toggle" aria-label="Menú">☰</button>
+      <ul class="nav-links">
+        <li><a href="#padres">Familia</a></li>
+        <li><a href="#countdown">Cuenta Regresiva</a></li>
+        <li><a href="#agenda">Programa</a></li>
+        <li><a href="#galeria">Galer&iacute;a</a></li>
+        <li><a href="#agradecimientos">Agradecimiento</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#rsvp">Confirmar</a></li>
+        <li><a href="#memorias">Memorias</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO (con pétalos integrados) -->
+    <section id="hero">
+      <div class="hero-petals-container"></div>
+      <div class="hero-content reveal">
+        <div class="hero-misquince">
+          <img src="img\icons\Crown.png" class="mini-crown" alt="" /> &nbsp;Mis
+        </div>
+        <div class="hero-num">15</div>
+        <div class="hero-anos">años</div>
+        <div class="hero-name">Laura Alejandra</div>
+        <p class="hero-quote">
+          "Hoy mis sueños vuelan alto y mi corazón celebra. Gracias por ser
+          parte de este día tan especial para mí."
+        </p>
+      </div>
+      <div class="hero-banner-wrap">
+        <img
+          class="hero-banner"
+          src="img\FotoBanner.jpeg"
+          alt="Laura Alejandra - Mis 15 Años"
+          onerror="
+            this.src =
+              'https://placehold.co/800x1000/fce4ec/d4af37?text=Foto+Laura'
+          "
+        />
+        <div class="hero-overlay"></div>
+      </div>
+    </section>
+
+    <!-- GOLD STRIPE -->
+    <div class="stripe">
+      ✦ &nbsp;Una noche mágica donde cada sonrisa cuenta una historia&nbsp; ✦
+    </div>
+
+    <!-- HONOR / PADRES -->
+    <section id="padres">
+      <img src="img\separators\aFamily.png" class="section-icon" alt="" />
+      <div class="reveal">
+        <div class="section-label">Con el amor de</div>
+        <h2 class="section-title" style="text-align: center">Mi Familia</h2>
+        <div class="divider"></div>
+        <p class="padres-text">
+          Con mi padre,<br />
+          <span class="padres-names">Carlos Andrés Sánchez Navas</span>,<br />
+          te invito a celebrar con alegría este momento tan especial.<br /><br />
+          Con mucho amor, tu presencia ilumina esta noche que tanto hemos
+          soñado.
+        </p>
+      </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section id="countdown">
+      <img src="img\separators\aCountdown.png" class="section-icon" alt="" />
+      <div class="reveal">
+        <div class="preparate-text">Prepárate porque faltan...</div>
+        <div class="countdown-grid">
+          <div class="cd-box">
+            <span class="cd-num" id="cd-days">00</span
+            ><span class="cd-label">Días</span>
+          </div>
+          <div class="cd-box">
+            <span class="cd-num" id="cd-hours">00</span
+            ><span class="cd-label">Horas</span>
+          </div>
+          <div class="cd-box">
+            <span class="cd-num" id="cd-mins">00</span
+            ><span class="cd-label">Minutos</span>
+          </div>
+          <div class="cd-box">
+            <span class="cd-num" id="cd-secs">00</span
+            ><span class="cd-label">Segundos</span>
+          </div>
+        </div>
+      </div>
+      <div class="petals-container"></div>
+    </section>
+
+    <!-- AGENDA -->
+    <section id="agenda">
+      <img src="img\separators\corona.png" class="section-icon" alt="" />
+      <div class="reveal" style="text-align: center; margin-bottom: 48px">
+        <div class="section-label">El programa</div>
+        <h2 class="section-title">Agenda de la Noche</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-dot">
+            <img src="img\icons\a.png" class="mini-crown" alt="" />
+          </div>
+          <div class="tl-time">07:00 PM</div>
+          <div class="tl-event">Llegada de los Invitados</div>
+          <div class="tl-desc">Bienvenida y apertura</div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot">
+            <img src="img\icons\b.png" class="mini-crown" alt="" />
+          </div>
+          <div class="tl-time">08:00 PM</div>
+          <div class="tl-event">Entrada de Laura</div>
+          <div class="tl-desc">El momento más esperado</div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot">
+            <img src="img\icons\c.png" class="mini-crown" alt="" />
+          </div>
+          <div class="tl-time">09:00 PM</div>
+          <div class="tl-event">Sesión de Fotos</div>
+          <div class="tl-desc">Recuerdos para siempre</div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot">
+            <img src="img\icons\d.png" class="mini-crown" alt="" />
+          </div>
+          <div class="tl-time">09:30 PM</div>
+          <div class="tl-event">Cena · Brindis · Pastel</div>
+          <div class="tl-desc">Compartiendo la mesa con amor</div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot">
+            <img src="img\icons\e.png" class="mini-crown" alt="" />
+          </div>
+          <div class="tl-time">10:45 PM</div>
+          <div class="tl-event">¡A Bailar!</div>
+          <div class="tl-desc">Pista abierta para todos</div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot">
+            <img src="img\icons\f.png" class="mini-crown" alt="" />
+          </div>
+          <div class="tl-time">12:00 AM</div>
+          <div class="tl-event">Hora Loca</div>
+          <div class="tl-desc">El cierre más divertido de la noche</div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot">
+            <img src="img\icons\g.png" class="mini-crown" alt="" />
+          </div>
+          <div class="tl-time">02:00 AM</div>
+          <div class="tl-event">Dulces sue&ntilde;os</div>
+          <div class="tl-desc">Ya podemos ir a descansar</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria">
+      <img src="img\separators\aGallery.png" class="section-icon" alt="" />
+      <div class="reveal" style="text-align: center; margin-bottom: 40px">
+        <div class="section-label">Recuerdos</div>
+        <h2 class="section-title">Galería de Laura</h2>
+        <div class="divider"></div>
+      </div>
+      <!-- CARRUSEL -->
+      <div class="carousel-container">
+        <div class="carousel-slides">
+          <div class="carousel-slide">
+            <img src="gallery/image1.jpg" alt="Foto" />
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery/image2.jpg" alt="Foto" />
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery/image3.jpg" alt="Foto" />
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery/image4.jpg" alt="Foto" />
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery/image5.jpg" alt="Foto" />
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery/image6.jpg" alt="Foto" />
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery/image7.jpg" alt="Foto" />
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery/image8.jpg" alt="Foto" />
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery/image9.jpg" alt="Foto" />
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery/image10.jpg" alt="Foto" />
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery/image11.jpg" alt="Foto" />
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery/image12.jpg" alt="Foto" />
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery/image13.jpg" alt="Foto" />
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery/image14.jpg" alt="Foto" />
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery/image15.jpg" alt="Foto" />
+          </div>
+        </div>
+
+        <!-- Botones de navegación -->
+        <button class="carousel-btn prev" aria-label="Anterior">
+          &#10094;
+        </button>
+        <button class="carousel-btn next" aria-label="Siguiente">
+          &#10095;
+        </button>
+
+        <!-- Indicadores (puntos) -->
+        <div class="carousel-dots"></div>
+      </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: PADRINOS / AGRADECIMIENTOS -->
+    <section id="agradecimientos">
+      <img
+        src="img\separators\agradecimiento.png"
+        class="section-icon"
+        alt=""
+      />
+      <div class="reveal" style="text-align: center">
+        <div class="section-label">A mis Padrinos <br/> y Acompañantes</div>
+        <h2 class="section-title">Agradecimiento</h2>
+        <div class="divider"></div>
+        <p class="agradecimientos-text">
+          Gracias por estar siempre en mi camino y ayudarme a cumplir mis
+          sueños.
+        </p>
+        <div class="padrinos-image-wrapper">
+          <img src="gallery/padrinos.jpg" alt="Padrinos" class="padrinos-img" />
+        </div>
+        <p class="mensaje-especial">
+          Es hora de brillar y alcanzar mis sueños. Gracias por su apoyo
+          incondicional, los espero para disfrutar y vivir esta gran noche
+          juntos.
+        </p>
+      </div>
+    </section>
+
+    <!-- UBICACION -->
+    <section id="ubicacion">
+      <img src="img\separators\aPlace.png" class="section-icon" alt="" />
+      <div class="reveal">
+        <div class="section-label" style="text-align: center">
+          ¿Dónde nos vemos?
+        </div>
+        <h2 class="section-title" style="text-align: center">El Lugar</h2>
+        <div class="divider"></div>
+        <div class="location-card">
+          <div class="loc-icon">🥂</div>
+          <div class="loc-name">Moon Night piso 5</div>
+          <div class="loc-addr">Cl 17 Sur #22 - 37, Bogotá</div>
+          <div class="map-placeholder">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d409.5543820906202!2d-74.10250321818306!3d4.586847460027447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9f0595da02e9%3A0x9c33a0b8be98532b!2sEventos%20y%20Recepciones%20Moon%20Night!5e1!3m2!1ses-419!2sco!4v1781998378837!5m2!1ses-419!2sco"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <a
+            href="https://www.google.com/maps/search/Moon+Night+Bogotá"
+            target="_blank"
+            class="btn-gold"
+            >📍 &nbsp;Cómo Llegar</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- DRESS CODE -->
+    <section id="dresscode">
+      <img src="img\separators\aClothes.png" class="section-icon" alt="" />
+      <div class="reveal">
+        <div class="section-label">Etiqueta</div>
+        <h2 class="section-title">Código de Vestimenta</h2>
+        <p
+          style="
+            font-family: var(--serif2);
+            font-style: italic;
+            font-size: 1.3rem;
+            color: #888;
+            margin-bottom: 36px;
+          "
+        >
+          Guapos y Divinas · Elegantes, a tu estilo <br />
+          Vístete formal, siéntete cómodo y luce increíble. ¡Los tenis también
+          son bienvenidos!
+        </p>
+        <div class="divider"></div>
+        <div class="dc-grid">
+          <div class="dc-card reveal">
+            <img src="img\icons\Dress ella.png" class="section-icon" alt="" />
+            <div class="dc-label">Damas</div>
+            <div class="dc-desc">Vestido formal largo o cocktail.<br /></div>
+          </div>
+          <div class="dc-card reveal">
+            <img
+              src="img\icons\Dress el.png"
+              class="section-icon"
+              alt=""
+              style="width: 25%; height: auto"
+            />
+            <div class="dc-label">Caballeros</div>
+            <div class="dc-desc">
+              Traje formal elegante.<br />Corbata opcional.
+            </div>
+          </div>
+        </div>
+        <div class="dc-alert reveal">
+          <img src="img\icons\h.png" class="mini-crown" alt="" />
+          <br />
+          <strong>Nota importante:</strong><br />
+          El color <strong>Rosado</strong> será exclusivo para la quinceañera
+          esa noche.
+        </div>
+      </div>
+    </section>
+
+    <!-- REGALOS -->
+    <section id="regalos">
+      <img src="img\separators\aGift.png" class="section-icon" alt="" />
+      <div class="reveal" style="text-align: center">
+        <div class="section-label">Un detalle especial</div>
+        <h2 class="section-title">Lluvia de Sobres</h2>
+        <div class="divider"></div>
+        <p class="regalo-text">
+          Con tu presencia y cariño ya me siento completamente afortunada.<br />
+          Si quieres sumar un detalle, puedes unirte a nuestra lluvia de
+          sobres.<br />
+          Habrá una cajita ese día para recibirlos, o si prefieres, puedes hacer
+          una transferencia.
+        </p>
+        <div
+          class="sobre-animate"
+          onclick="
+            document.querySelector('.modal-overlay').classList.add('open')
+          "
+        >
+          <img
+            src="img\icons\sobre-sello.png"
+            alt="Sello de invitación"
+            class="sobre-sello-img"
+          />
+        </div>
+        <br /><br />
+        <button
+          class="btn-gold"
+          onclick="
+            document.querySelector('.modal-overlay').classList.add('open')
+          "
+        >
+          📲 &nbsp;Transferencia por Nequi
+        </button>
+      </div>
+    </section>
+
+    <!-- MODAL NEQUI -->
+    <div
+      class="modal-overlay"
+      onclick="if (event.target === this) this.classList.remove('open');"
+    >
+      <div class="modal-box">
+        <button
+          class="modal-close"
+          onclick="
+            document.querySelector('.modal-overlay').classList.remove('open')
+          "
+        >
+          ✕
+        </button>
+
+        <!-- Aquí va la imagen QR -->
+        <div class="modal-qr">
+          <img
+            src="img\qrs\qr-nequi.jpg"
+            alt="Código QR de Nequi"
+            class="qr-image"
+          />
+        </div>
+
+        <div class="modal-title">Nequi</div>
+        <div class="modal-num">321 6412877</div>
+        <button class="btn-copy" onclick="copiarNequi()">
+          📋 &nbsp;Copiar número
+        </button>
+        <div id="copy-msg"></div>
+      </div>
+    </div>
+
+    <!-- RSVP -->
+    <section id="rsvp">
+      <img src="img\separators\aRsvp.png" class="section-icon" alt="" />
+      <div class="reveal">
+        <div class="section-label">Protocolo</div>
+        <h2 class="section-title">Confirma tu Asistencia</h2>
+        <p class="rsvp-text">
+          Quiero que esta noche sea perfecta… y tú eres parte de esa
+          perfección.<br />Así que confirma antes del
+          <strong style="color: var(--brown)">30 de Junio</strong>.
+        </p>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSc34FDm8J8gZ1izrN8S5_vxxwGO40Z6v83SpfOd6jM8XM1D8g/viewform?usp=publish-editor"
+          target="_blank"
+          class="btn-gold"
+          id="btn-abrir-externo"
+        >
+          📋 &nbsp;Confirmar mi Asistencia
+        </a>
+      </div>
+    </section>
+
+    <!-- MEMORIAS -->
+    <section id="memorias">
+      <img src="img\separators\aMemories.png" class="section-icon" alt="" />
+      <div class="reveal" style="text-align: center">
+        <div class="section-label">Comparte el momento 📸</div>
+        <h2 class="section-title">Memorias Compartidas</h2>
+        <div class="divider"></div>
+        <span>📸</span>
+        <p class="mem-text">
+          ¡Que los recuerdos no se queden solo en tu galería!<br />Comparte tus
+          fotos y videos de la fiesta en nuestro grupo.
+        </p>
+        <br /><br />
+        <div class="qr-frame">
+          <img
+            src="img\qrs\qr-fotos.png"
+            alt=""
+            style="margin: 70px 0px 70px 0px"
+          />
+        </div>
+        <br />
+        <a href="https://instagram.com/" target="_blank" class="btn-gold"
+          >📷 &nbsp;O sube a Instagram</a
+        >
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-decoration"></div>
+      <div class="footer-content">
+        <div class="footer-name">Laura Alejandra Sánchez Martínez</div>
+        <div class="footer-sub">Mis 15 Años · 4 de Julio de 2026</div>
+        <div class="footer-hearts">
+          <span class="heart">♥</span>
+          <span class="heart">♡</span>
+          <span class="heart">♥</span>
+        </div>
+        <div class="footer-quote">
+          "Una noche mágica donde cada sonrisa cuenta una historia"
+        </div>
+      </div>
+    </footer>
+
+    <!-- AUDIO PLAYER -->
+    <div id="audio-player">
+      <div class="click-incentive">🔥 ¡Da click! 🔥</div>
+      <button id="play-btn">▶</button>
+      <div class="audio-info">
+        <div class="audio-message">El tema de la noche</div>
+        <div class="audio-track">Mil palabritas</div>
+        <div class="audio-artist">Alex Campos</div>
+      </div>
+      <div class="equalizer paused" id="eq">
+        <div class="eq-bar" style="height: 8px"></div>
+        <div class="eq-bar" style="height: 12px"></div>
+        <div class="eq-bar" style="height: 16px"></div>
+        <div class="eq-bar" style="height: 10px"></div>
+        <div class="eq-bar" style="height: 14px"></div>
+      </div>
+    </div>
+
+    <audio id="bg-audio" src="assets/AlexCampos_MilPalabritas.mp3" loop></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
