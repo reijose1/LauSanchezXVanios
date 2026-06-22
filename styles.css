@@ -2244,3 +2244,28 @@ footer::after {
   border-top: 2px solid var(--gold);
   padding-top: 20px;
 }
+
+/* === AJUSTE QR EN SECCIÓN MEMORIAS === */
+.qr-frame {
+  width: 200px;           /* Un poco más grande para mejor visibilidad */
+  height: 200px;
+  background: linear-gradient(135deg, #fff0f5, #fff9f0);
+  border: 3px solid var(--gold);
+  border-radius: 18px;
+  margin: 30px auto 20px;  /* Centrado y separación */
+  display: flex;           /* Para centrar la imagen */
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 12px;           /* Espacio interno para que el QR no toque el borde */
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.15);
+}
+
+.qr-fotos-img {
+  width: 100%;             /* Ocupa todo el ancho del contenedor */
+  height: 100%;
+  object-fit: contain;     /* Mantiene la proporción sin deformar */
+  display: block;
+  border-radius: 8px;      /* Esquinas suaves */
+  background: transparent;
+}
